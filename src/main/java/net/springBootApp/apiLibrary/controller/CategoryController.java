@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.springBootApp.apiLibrary.model.dto.BookDto;
-import net.springBootApp.apiLibrary.model.dto.ResponseData;
-import net.springBootApp.apiLibrary.service.CategoryService;
+import net.springBootApp.apiLibrary.model.dto.request.BookDto;
+import net.springBootApp.apiLibrary.model.dto.response.ResponseData;
+import net.springBootApp.apiLibrary.services.service.CategoryService;
 
 @RestController
 @RequestMapping("/categories")

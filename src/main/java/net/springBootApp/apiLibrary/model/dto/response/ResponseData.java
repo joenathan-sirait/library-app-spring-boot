@@ -1,4 +1,4 @@
-package net.springBootApp.apiLibrary.model.dto;
+package net.springBootApp.apiLibrary.model.dto.response;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

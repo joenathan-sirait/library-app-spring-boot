@@ -1,16 +1,18 @@
-package net.springBootApp.apiLibrary.service;
+package net.springBootApp.apiLibrary.services.serviceImpl;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import net.springBootApp.apiLibrary.model.dto.BookDto;
-import net.springBootApp.apiLibrary.model.dto.ResponseData;
+
+import net.springBootApp.apiLibrary.model.dto.request.BookDto;
+import net.springBootApp.apiLibrary.model.dto.response.ResponseData;
 import net.springBootApp.apiLibrary.model.entity.Book;
 import net.springBootApp.apiLibrary.model.entity.Category;
 import net.springBootApp.apiLibrary.repository.BookRepository;
 import net.springBootApp.apiLibrary.repository.CategoryRepository;
+import net.springBootApp.apiLibrary.services.service.BookService;
 
 @Service
 @Transactional

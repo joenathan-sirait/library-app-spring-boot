@@ -1,7 +1,7 @@
-package net.springBootApp.apiLibrary.service;
+package net.springBootApp.apiLibrary.services.service;
 
-import net.springBootApp.apiLibrary.model.dto.BookDto;
-import net.springBootApp.apiLibrary.model.dto.ResponseData;
+import net.springBootApp.apiLibrary.model.dto.request.BookDto;
+import net.springBootApp.apiLibrary.model.dto.response.ResponseData;
 
 public interface BookService {
   // Proses CRUD

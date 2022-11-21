@@ -1,7 +1,7 @@
-package net.springBootApp.apiLibrary.service;
+package net.springBootApp.apiLibrary.services.service;
 
-import net.springBootApp.apiLibrary.model.dto.ResponseData;
-import net.springBootApp.apiLibrary.model.dto.UserDto;
+import net.springBootApp.apiLibrary.model.dto.request.UserDto;
+import net.springBootApp.apiLibrary.model.dto.response.ResponseData;
 
 public interface UserService {
     ResponseData<Object> register(UserDto request);

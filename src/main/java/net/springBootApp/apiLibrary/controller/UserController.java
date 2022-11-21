@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.springBootApp.apiLibrary.model.dto.ResponseData;
-import net.springBootApp.apiLibrary.model.dto.UserDto;
-import net.springBootApp.apiLibrary.service.UserService;
+import net.springBootApp.apiLibrary.model.dto.request.UserDto;
+import net.springBootApp.apiLibrary.model.dto.response.ResponseData;
+import net.springBootApp.apiLibrary.services.service.UserService;
 
 @RestController
 @RequestMapping("/users")

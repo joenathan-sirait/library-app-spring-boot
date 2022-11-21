@@ -1,4 +1,4 @@
-package net.springBootApp.apiLibrary.service;
+package net.springBootApp.apiLibrary.services.serviceImpl;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,19 +10,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
-import net.springBootApp.apiLibrary.model.dto.ResponseData;
-import net.springBootApp.apiLibrary.model.dto.UserDto;
+import net.springBootApp.apiLibrary.model.dto.request.UserDto;
+import net.springBootApp.apiLibrary.model.dto.response.ResponseData;
 import net.springBootApp.apiLibrary.model.entity.DetailUser;
 import net.springBootApp.apiLibrary.model.entity.User;
 import net.springBootApp.apiLibrary.repository.DetailUserRepository;
-import net.springBootApp.apiLibrary.repository.UserRepositroy;
+import net.springBootApp.apiLibrary.repository.UserRepository;
+import net.springBootApp.apiLibrary.services.service.UserService;
 
 @Service
 @Transactional
 
 public class UserServiceImpl implements UserService {
     @Autowired
-    private UserRepositroy userRepository;
+    private UserRepository userRepository;
 
     @Autowired 
     private DetailUserRepository detailUserRepository;
@@ -45,7 +46,6 @@ public class UserServiceImpl implements UserService {
             detailUser = new DetailUser(request.getFirstName(), request.getLastName(), request.getPhoneNumber());
             detailUser.setUserId(user);
             detailUser.setUserEmail(user);
-            user.setDetailUserId(detailUser);
             detailUserRepository.save(detailUser);
             data = new HashMap<>();
             data.put("email", user.getEmail());

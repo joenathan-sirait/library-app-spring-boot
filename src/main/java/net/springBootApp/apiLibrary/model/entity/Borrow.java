@@ -27,5 +27,5 @@ public class Borrow {
     private Book book;
     private LocalDateTime createdAt = LocalDateTime.now();
     private LocalDateTime updatedAt = createdAt.plusWeeks(1);
-    private boolean borrowed = true;
+    private Boolean borrowed = true;
 }

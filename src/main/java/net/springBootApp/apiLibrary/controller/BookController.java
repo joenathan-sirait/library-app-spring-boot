@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.springBootApp.apiLibrary.model.dto.BookDto;
-import net.springBootApp.apiLibrary.model.dto.ResponseData;
-import net.springBootApp.apiLibrary.service.BookService;
+import net.springBootApp.apiLibrary.model.dto.request.BookDto;
+import net.springBootApp.apiLibrary.model.dto.response.ResponseData;
+import net.springBootApp.apiLibrary.services.service.BookService;
 
 
 

@@ -29,9 +29,7 @@ public class User implements Serializable {
     private String password;
     private LocalDateTime createdAt = LocalDateTime.now();
     private boolean isDeleted = false;
-    @OneToOne
-    @JoinColumn(name = "detailUser_id")
-    private DetailUser detailUserId;
+
 
     
     public User(String email, String password) {
